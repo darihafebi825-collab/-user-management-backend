@@ -1,0 +1,24 @@
+{
+  "name": "user-management-backend",
+  "version": "1.0.0",
+  "description": "FeathersJS backend with PostgreSQL for User Management",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "migrate": "knex migrate:latest --knexfile src/knexfile.js",
+    "migrate:rollback": "knex migrate:rollback --knexfile src/knexfile.js"
+  },
+  "dependencies": {
+    "@feathersjs/express": "^4.5.15",
+    "@feathersjs/feathers": "^4.5.15",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "feathers-knex": "^6.1.0",
+    "knex": "^2.4.2",
+    "pg": "^8.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
